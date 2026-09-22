@@ -1,0 +1,5 @@
+package com.omnistock.inventory.entity;
+
+public class Inventory {
+
+}

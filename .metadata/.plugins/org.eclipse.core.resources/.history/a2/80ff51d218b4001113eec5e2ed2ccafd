@@ -1,0 +1,42 @@
+package com.omnistock.auth.service;
+
+import org.springframework.stereotype.Service;
+
+import com.omnistock.auth.entity.User;
+import com.omnistock.auth.repository.UserRepository;
+
+@Service
+public class AuthService {
+
+    private final UserRepository userRepository;
+
+    public AuthService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    public User register(User user) {
+
+        User existingUser =
+                userRepository.findByUsername(user.getUsername());
+
+        if (existingUser != null) {
+            return null;
+        }
+
+        return userRepository.save(user);
+    }
+
+    public User login(String username, String password) {
+
+        User user =
+                userRepository.findByUsername(username);
+
+        if (user != null &&
+            user.getPassword().equals(password)) {
+
+            return user;
+        }
+
+        return null;
+    }
+}

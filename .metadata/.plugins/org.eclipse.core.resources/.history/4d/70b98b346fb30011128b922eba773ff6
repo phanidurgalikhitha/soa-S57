@@ -1,0 +1,5 @@
+package com.omnistock.inventory.service;
+
+public class InventoryService {
+
+}

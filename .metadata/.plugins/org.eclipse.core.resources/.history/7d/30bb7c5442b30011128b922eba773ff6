@@ -1,0 +1,5 @@
+package com.omnistock.product.service;
+
+public class ProductService {
+
+}

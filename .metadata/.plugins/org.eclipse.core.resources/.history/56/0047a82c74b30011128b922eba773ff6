@@ -1,0 +1,5 @@
+package com.omnistock.order.entity;
+
+public class Order {
+
+}

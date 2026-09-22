@@ -1,0 +1,5 @@
+package com.omnistock.product.controller;
+
+public class ProductController {
+
+}

@@ -1,0 +1,5 @@
+package com.omnistock.auth.service;
+
+public class JwtService {
+
+}

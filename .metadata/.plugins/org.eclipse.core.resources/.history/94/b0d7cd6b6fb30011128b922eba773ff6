@@ -1,0 +1,5 @@
+package com.omnistock.inventory.controller;
+
+public class InventoryController {
+
+}
